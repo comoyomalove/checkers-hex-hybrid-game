@@ -25,6 +25,14 @@ The live game at <https://checkers-hex.nazakgul.games> has moved on since. v1 is
 
 Design notes: [Hybrid_GDD.md](Hybrid_GDD.md) · Full rules: [Player_Facing_Ruleset.md](Player_Facing_Ruleset.md)
 
+## Rules tests
+
+Run `npm test` with Node.js to check placement, mandatory captures, capture
+chains and both connection axes without a browser or network access. The pure
+engine lives in `rules.js`; the browser loads its `CheckersHexRules` namespace
+before `app.js`. Keep both files when copying the game. Opening `index.html`
+directly still works without a server or an install.
+
 ---
 
 ---
